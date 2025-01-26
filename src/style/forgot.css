@@ -1,0 +1,67 @@
+input.inpforgot{
+    margin-bottom: 20px;
+    background-color: #b1b1b1;
+    max-width: 545px;
+    height: 45px;
+     min-width: 250px;
+     border:  1px solid hsla(220, 13%, 91%, 1);
+    border-radius: 15px; 
+    padding-right: 10px;
+}
+.forget{
+    background: radial-gradient(ellipse at center, #08000086, #000000);
+}
+button.btn-forgot {
+width: 546.3px;
+height: 49px;
+border-radius: 15px;
+border: none;
+background-color:#42050a;
+margin-top: 40px;
+
+}
+.forgetdiv,
+.codeform {
+    width: 700px;
+    height: 700px;
+    background-color: #1c1b1bf2;
+    border-radius: 40% 10% 40% 10%;
+}
+.text-par{
+    color:hsla(212, 9%, 66%, 1);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Cairo;
+    line-height: 26.24px;
+
+}
+h1{
+font-size: 40px;
+font-weight: 700;
+line-height: 74.96px;
+text-align: center;
+}
+.code{
+    background: radial-gradient(ellipse at center, #08000086, #000000);
+}
+.text-forgot a {
+    text-decoration: none;
+    color: black;
+
+}
+input.inpCode {
+   width:85px;
+   min-width: 40px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid  hsla(44, 84%, 55%, 1);
+
+}
+.text-forgot  ,.text-forgot span.back {
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26.24px;
+    text-align: center;
+    
+}

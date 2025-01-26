@@ -1,0 +1,33 @@
+div.caffe,
+div.res{
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 580px;
+    height: 560px;
+    border-radius:20px 20px;
+}
+div.caffe {
+background-image: url(../assests/caffee.png);
+}
+div.res{
+    background-image: url(../assests/res.png);
+
+}
+button.view-filter{
+    background-color:#42050a;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    width: 163.34px;
+height: 48px;  
+border: none;
+border-radius: 8px ;
+}
+
+.text-filter p{
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+}

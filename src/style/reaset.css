@@ -1,0 +1,26 @@
+input{
+  max-width: 545px;
+  border-radius: 15px;
+  height: 59px;
+}
+.inp-group{
+
+  max-width: 545px;
+}
+.inp-group span{
+    position:absolute;
+    cursor: pointer ;
+    top:50%;
+    transform: translateY(-50%) ;
+    left:6%;
+}
+h1{
+font-size: 40px;
+font-weight: 700;
+line-height: 74.96px;
+
+
+}
+button{
+    max-width: 545px;
+}

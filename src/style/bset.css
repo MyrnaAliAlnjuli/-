@@ -1,0 +1,55 @@
+h3.best{
+    border-bottom: 2px solid #EDB82C;
+    width: 241px;
+    padding-bottom: 10px;
+}
+.best_text p {
+ color: black;
+font-size: 16px;
+font-weight: 400;
+line-height: 29.98px;
+
+}
+.rating img.starImg{
+    width:18px ;
+    height:18px ;
+}
+.card.cardBeastRes {
+    /* background-color: #1c1b1bf2; */
+    background-color: #4c331f50;
+    border-radius: 50% 50% 10px 10px;
+    color: white;
+}
+
+img.coverBest{
+height: 203px;
+border-radius: 50%;
+} 
+/* .bestCard{
+width: 300px;
+height: 385px;
+border-radius: 26px 0px 0px 0px;
+margin-bottom: 10px;
+border: none;
+background-color: #1c1b1bf2;
+} */
+.theBest{
+    background-color: #1c1b1bf2;
+    width: 350px;
+    height: 350px;
+    border-radius: 40% 40% 0 0;
+}
+h2.headBest{
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+
+    
+    }
+p.parBest{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: right;
+}    

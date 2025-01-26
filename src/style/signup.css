@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+  }
+.signup{
+ 
+    background: radial-gradient(ellipse at center, #08000086, #000000);
+}
+.divform{
+    width: 700px;
+    height: 700px;
+    background-color: red;
+    background-color: #1c1b1bf2;
+    border-radius: 40% 0% 40% 10%;
+
+   
+}
+.newAccount {
+    background-color: #1c1b1bf2;
+    padding: 30px;
+    border-radius: 50px;
+}
+.signUpForm {
+    padding:0 40px;
+
+ 
+}
+ .sign-now
+ {
+     /* color:hsla(44, 84%, 55%, 1);  */
+     text-decoration: none;
+ }
+ 
+ .inputFuser,
+ .inputLuser {
+    width: 250px;
+     height: 45px;
+     margin-left: 20px;
+     border-radius: 15px;
+     border: 1px solid hsla(220, 13%, 91%, 1);
+     background-color: #b1b1b1;
+     color: white;
+ 
+ }
+ .inp{
+ background-color: #b1b1b1;
+max-width: 545px;
+height: 45px;
+ min-width: 250px;
+ border:  1px solid hsla(220, 13%, 91%, 1);
+border-radius: 15px; 
+
+
+ } 
+ .anchor{
+    color: black;
+    margin-left: 10px;
+  
+ }
+ .anchor span {
+    color:white; 
+}
+button.signup-sub {
+ max-width: 546px;
+height: 49px;
+border-radius: 40px;
+/* background: hsla(44, 84%, 55%, 1); */
+background-color:#42050a;
+border: none;
+color: white;
+}
+
+  .newAccount {
+    position: absolute;
+    top: -50px; 
+    transform: translateX(-50%,-50%);
+    font-weight: bold;
+    color: white;
+    animation: moveDown 1.5s ease-out forwards;
+  }
+
+    @media (max-width: 576px) {
+        .newAccount{
+            display: none;
+        }
+        .signUpForm{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+    }
+    @media (max-width: 768px) {
+        .newAccount{
+            display: none;
+        }
+    }
+    @media (max-width: 820px) {
+        .newAccount{
+            display: none;
+
+        }
+    }
+    @media (max-width: 1024px) {
+        .newAccount{
+            display: none;
+        }
+    }
+  @keyframes moveDown {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 50%;
+      opacity: 1;
+    }
+  }
+  

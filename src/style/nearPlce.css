@@ -1,0 +1,30 @@
+
+div.place-card{
+    width: 389.69px;
+    height: 122px;
+    border-radius: 20px ; 
+    border: none; 
+    box-shadow:1px 0 20px 1px hsla(0, 0%, 0%, 0.13);
+    background-color: #1c1b1bf2;
+}
+h3.text-card{
+   
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29.98px;
+    
+}
+p.dispription{
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+color: black;
+
+}
+img.nearImg{
+    width:100px;
+    height: 89px; 
+    border-radius: 8px;  
+}
+
+

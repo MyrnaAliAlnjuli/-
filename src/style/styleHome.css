@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-main {
+    background-image: url(../assests/photo-1727375713827-f966f1374b93.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style:oblique;
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), 0 0 25px  #42050a;
+}
+.buttons button{
+    border: none;
+    height: 48px;
+    border-radius: 8px;
+    color: white;
+    font-size:20px;
+    font-weight: 600;
+    margin-left: 10px;
+    width: 131px;
+    height: 48px;
+}
+.buttons .button-one{
+background-color: hsla(0, 0%, 13%, 0.8);
+width: 131px;
+margin-left: 10px;
+}
+.buttons .button-one:active{
+    /* background-color: rgba(237, 184, 44,1); */
+    background-color:#42050a;
+
+
+}
+button.logout_btn{
+    /* background-color: rgba(237, 184, 44,1); */
+    background-color:#42050a;
+
+
+}
+.buttons .button-two{
+    background-color:#42050a;
+
+    }
+    
+.section-2 .section22 h1{
+    border-bottom: 3px solid #42050a;
+
+}
+button.view{
+    width: 149px;
+    height: 44px;
+    border:none;
+    border-radius: 30px;
+    /* background-color: white; */
+    background-color: #42050a
+}
+.section22 a {
+text-decoration: none;
+color: black;
+}
+.place {
+    width: 389.69px;
+    height: 122px;
+}
