@@ -9,8 +9,9 @@ input.inpform{
     background-color: #b1b1b1;
     max-width: 545px;
     height: 45px;
+    color: black;
      min-width: 250px;
-     border:  1px solid hsla(220, 13%, 91%, 1);
+    border:  1px solid hsla(220, 13%, 91%, 1);
     border-radius: 15px; 
     
 }

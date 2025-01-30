@@ -65,12 +65,11 @@ function Code() {
         دليل المدينه <img src={logo} alt=''/>
     </Link>
           <div className="col-lg-6 text-center mb-4 mb-lg-0 pt-5">
-              {/* <img src={code} alt="verification" className='img-fluid'/> */}
               <h1 className='custom newAccount text-white' >ادخل رمز التحقق</h1>
             </div>
             <div className=" d-flex justify-content-center flex-column align-items-center  col-lg-6 pt-5 codeform">
               <div className="text-forgot" dir='rtl'>
-                <Link className="mb-5 d-block text-white" to="/login">
+                <Link className="mb-5 d-block text-white" to="/">
                   <img src={arrow} alt="back" className="p-2 text-white" />
                   الرجوع لتسجيل الدخول
                 </Link>

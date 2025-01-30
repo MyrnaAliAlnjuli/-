@@ -13,7 +13,6 @@ import Single from './pages/Single';
 import Favorite from './pages/Favorite';
 import Restourants from './pages/Restourants';
 import Caffees from './pages/Caffees';
-// import NavBar from './components/NavBar';/
 function App() {
   
   return (
@@ -27,7 +26,7 @@ function App() {
   <Route path='/code' element={<Code/>}/>
   <Route path='/reseat' element={<ReseatPass/>}/>
   <Route path='/profile' element={<Profile/>}/>
-  <Route path='single/:userId' element={<Single/>}/>
+  <Route path='/single/:userId' element={<Single/>}/>
   <Route path='/favorites' element={<Favorite/>}/>
   <Route path='/restourants' element={<Restourants/>}/>
   <Route path='/caffees' element={<Caffees/>}/>

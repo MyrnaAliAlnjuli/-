@@ -41,8 +41,7 @@ body, html {
      border-radius: 15px;
      border: 1px solid hsla(220, 13%, 91%, 1);
      background-color: #b1b1b1;
-     color: white;
- 
+ color: black; 
  }
  .inp{
  background-color: #b1b1b1;
@@ -51,7 +50,7 @@ height: 45px;
  min-width: 250px;
  border:  1px solid hsla(220, 13%, 91%, 1);
 border-radius: 15px; 
-
+color: black;
 
  } 
  .anchor{

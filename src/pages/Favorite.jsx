@@ -2,48 +2,65 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function Favorite() {
-  const [favorite, setFavorite] = useState([]);  // Use null initially to indicate no data
-  const [loading, setLoading] = useState(true);    // Loading state for when the data is being fetched
-  const [error, setError] = useState(null);        // Error state for any API request failure
+  const [favorite, setFavorite] = useState([]);  
+  const [loading, setLoading] = useState(true);    
+  const [error, setError] = useState(null);        
 
-  const token = JSON.parse(localStorage.getItem('token'));
-  const headers = {
-    Authorization: `Bearer ${token}`
-  };
+  const token = localStorage.getItem('token');
+  console.log("Token being sent:", token); // ✅ تأكدي إن التوكن موجود
 
   useEffect(() => {
-    axios
-      .get('https://dalil.mlmcosmo.com/api/favorites', { headers })
-      .then((response) => {
-        setFavorite(response.data);  // Set the fetched data into the state
-        setLoading(false);            // Set loading to false after data is fetched
-      })
-      .catch((error) => {
-        setError('Error fetching data');
-        setLoading(true);            // Set loading to false even if there’s an error
-      });
-  }, []);  // Empty dependency array to fetch data on component mount only
+    if (!token) {
+      setError('لم يتم تسجيل الدخول.');  
+      setLoading(false);
+      return;
+    }
 
-  if (loading) {
-    return <div className="container">Loading...</div>;  // Show loading message while data is being fetched
-  }
+    axios.get('https://dalil.mlmcosmo.com/api/favorites', {
+      headers: { Authorization: `Bearer ${JSON.parse(token)}` }
+    })
+    .then((response) => {
+      console.log("API Response:", response.data); // ✅ شوفي شكل البيانات الجاية
+      setFavorite(response.data.data || response.data); 
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("API Error:", error.response?.data || error.message); // ✅ طباعة أي خطأ
+      setError('حدث خطأ أثناء جلب البيانات.');
+      setLoading(false);
+    });
 
-  if (error) {
-    return <div className="container">Error: {error}</div>;  // Show error message if there’s an issue
-  }
+  }, [token]);
+
+  if (loading) return <div className="container text-center mt-5">جارِ التحميل...</div>;
+  if (error) return <div className="container text-danger text-center mt-5">❌ {error}</div>;
 
   return (
     <div className="container vh-100">
-      <h1>الاماكن المفضله</h1>
-   <div className="row">
- <div className="col">
-{favorite.map((place)=>(
-  <div className="card">
-    <img src={place.cover_image} alt="" />
-  </div>
-))}
- </div>
-   </div>
+      <h1 className="text-center my-4">📌 الأماكن المفضلة</h1>
+      <div className="row justify-content-center">
+        {favorite.length > 0 ? (
+          favorite.map((place, index) => (
+            <div className="col-md-4 col-sm-6 mb-4" key={index}>
+              <div className="card shadow-sm">
+                <img 
+                  src={place.cover_image || 'https://via.placeholder.com/300'} 
+                  alt={place.name} 
+                  className="card-img-top" 
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{place.name}</h5>
+                  <p className="card-text">التقييم: {place.rating} ⭐</p>
+                </div>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="text-center w-100">
+            <p>🚀 لا يوجد أماكن مفضلة بعد.</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

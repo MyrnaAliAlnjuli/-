@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import logo from'../assests/logo.png';
-import signup from'../assests/signup1.png';
 import  '../style/signup.css';
 import Swal from 'sweetalert2';
 import axios from 'axios';
@@ -52,7 +51,9 @@ Swal.fire({
   draggable: true,
   background: "white"
 })
-setTimeout(()=>{navigate('/login')},2000)
+setTimeout(()=>{
+  
+  navigate('/login')},3000)
   })
   .catch((error)=>{
    Swal.fire(error.response.data.message)
@@ -90,7 +91,7 @@ setTimeout(()=>{navigate('/login')},2000)
   <input type="email" className=" inp  w-100" placeholder='أدخل بريدك الإلكتروني' id="exampleInputPassword1"  onChange={(e)=>{setEmail(e.target.value)}}/>
   </div>
 <div className="mb-3"> 
-<input type="number" className=" inp w-100" placeholder='أدخل رقم الهاتف الخاص بك'id="exampleInputPassword1"  onChange={(e)=>{setPhone(e.target.value)}}/>
+<input type="tel" dir='rtl' className=" inp w-100 " placeholder='أدخل رقم الهاتف الخاص بك'id="exampleInputPassword1"  onChange={(e)=>{setPhone(e.target.value)}}/>
   </div>  <div className="mb-3">
     
     <input type="password" className=" inp px-2 w-100"  placeholder='أدخل كلمة المرور الخاصة بك' id="exampleInputPassword1"onChange={(e)=>{setPass(e.target.value)}} />
@@ -99,7 +100,10 @@ setTimeout(()=>{navigate('/login')},2000)
         <a href=' ' className='text-decoration-none anchor mt-2 text-white'>وافق علي <span>شروط الخدمه</span> وسياسه الخصوصيه <span>الخاصه بك</span></a>
        
       </div>
- <button className='mt-4 signup-sub w-100' type="submit" onClick={()=>{handleInp()}}>تسجيل جديد </button>
+ <button className='mt-4 signup-sub w-100' type="submit" onClick={()=>{handleInp()
+  
+ }}>تسجيل جديد </button>
+  
   </div>
     </div>
 

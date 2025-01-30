@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../style/login.css';
-import login from '../assests/login.png';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assests/logo.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
@@ -40,10 +37,12 @@ useEffect (()=>{
       axios.post("https://dalil.mlmcosmo.com/api/login", formData).then((response) => {
         const token = response.data.token;
         localStorage.setItem("token", JSON.stringify(token));
+        console.log("Stored Token:", localStorage.getItem("token"));
+        console.log(response.data)
         Swal.fire(response.data.message);
         setTimeout(()=>{
           navigate('/');
-        },1000)
+        },3000)
       }).catch((error) => {
         Swal.fire(error.response.data.message);
       });

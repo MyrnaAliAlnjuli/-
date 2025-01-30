@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import NavBar from '../components/NavBar';
 import '../style/styleHome.css'
 import Places from '../components/Places';
-// import hero from '../assests/hero.png';
-// import Login from './Login';
 import { useNavigate } from 'react-router-dom';
 import anime from 'animejs';
 import { AuthContext } from '../context/authContext';
@@ -24,14 +22,39 @@ function Home() {
           easing: 'easeOutExpo',
           delay: (el, i) => i * 100,
         });
-      }, []);
-    // const handleLogout = () =>{
-    //   axios.post("https://dalil.mlmcosmo.com/api/logout", {}, {
-    //     headers: {
-    //       Authorization: `Bearer ${localStorage.getItem("token")}` // إرسال الـ token في الـ header
-    //     }
-    //   })
-    // }
+        const token = localStorage.getItem("token");
+        setLogedIn(!!token)
+      },[]);
+    
+      const handleLogout = () => {
+        const token = JSON.parse(localStorage.getItem("token")
+        
+      );
+      
+        // التأكد من وجود التوكن قبل الإرسال
+        if (!token) {
+          console.warn("No token found, user might already be logged out.");
+          return;
+        }
+      
+        axios.post("https://dalil.mlmcosmo.com/api/logout", {}, {
+          headers: {
+            Authorization: `Bearer ${token}` // إرسال التوكن في الهيدر
+          }
+        })
+        .then((response) => {
+          console.log("Logout successful:", response.data);
+      
+          // حذف التوكن من localStorage بعد نجاح الطلب
+          localStorage.removeItem("token");
+      
+          // (اختياري) إعادة توجيه المستخدم لصفحة تسجيل الدخول
+        navigate('/login')        })
+        .catch((error) => {
+          console.error("Logout failed:", error.response?.data || error.message);
+        });
+      };
+      
   return (
       <> 
       <NavBar/>
@@ -66,10 +89,8 @@ function Home() {
   ) : (
     <button className='logout_btn'
       onClick={() => {
-        // handleLogout()
+        handleLogout()
         setLogedIn(false);
-        navigate('/')
-        console.log("User logged out");
       }}
     >
       Logout
