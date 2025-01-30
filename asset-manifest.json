@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d98220d.css",
+    "main.js": "/static/js/main.37515131.js",
+    "static/js/488.e113b026.chunk.js": "/static/js/488.e113b026.chunk.js",
+    "static/media/caffee.png": "/static/media/caffee.43dcd4c5001fe65408ed.png",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/res.png": "/static/media/res.8bef3c9206efb6593550.png",
+    "static/media/photo-1727375713827-f966f1374b93.avif": "/static/media/photo-1727375713827-f966f1374b93.1f1d7d6cafe412acaea3.avif",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/code.png": "/static/media/code.82895f9e12a159e48929.png",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/profile-hero.png": "/static/media/profile-hero.818a3dd549e256951f8e.png",
+    "static/media/Forgot password-bro 1.png": "/static/media/Forgot password-bro 1.f8957bc8bc571f8ffeab.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/profile.png": "/static/media/profile.566f34b451f30f3300b7.png",
+    "static/media/logo.png": "/static/media/logo.5454b8f9ab4b400d2d73.png",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/index.html",
+    "main.6d98220d.css.map": "/static/css/main.6d98220d.css.map",
+    "main.37515131.js.map": "/static/js/main.37515131.js.map",
+    "488.e113b026.chunk.js.map": "/static/js/488.e113b026.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d98220d.css",
+    "static/js/main.37515131.js"
+  ]
+}
